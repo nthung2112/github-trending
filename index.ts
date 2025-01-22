@@ -26,7 +26,7 @@ const collectDocs = async (): Promise<{ ok: boolean; error?: Error }> => {
 
     return { ok: true };
   } catch (error) {
-    return { ok: false, error };
+    return { ok: false, error: error as Error };
   }
 };
 
